@@ -1,0 +1,104 @@
+[
+  {
+    "number": 1,
+    "name": "The Creative",
+    "chinese": "乾",
+    "lines": ["yang", "yang", "yang", "yang", "yang", "yang"],
+    "judgment": "The Creative works sublime success, furthering through perseverance.",
+    "image": "The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.",
+    "description": "Pure creative energy. Initiative, leadership, and primal force manifest in the material world.",
+    "changing_lines": {
+      "1": "Hidden dragon. Do not act.",
+      "2": "Dragon appearing in the field. It furthers one to see the great man.",
+      "3": "All day long the superior man is creatively active. At nightfall his mind is still beset with cares. Danger. No blame.",
+      "4": "Wavering flight over the depths. No blame.",
+      "5": "Flying dragon in the heavens. It furthers one to see the great man.",
+      "6": "Arrogant dragon will have cause to repent."
+    }
+  },
+  {
+    "number": 2,
+    "name": "The Receptive",
+    "chinese": "坤",
+    "lines": ["yin", "yin", "yin", "yin", "yin", "yin"],
+    "judgment": "The Receptive brings about sublime success, furthering through the perseverance of a mare.",
+    "image": "The earth's condition is receptive devotion. Thus the superior man who has breadth of character carries the outer world.",
+    "description": "Pure receptive energy. Yielding, nurturing, and supportive force that complements the creative.",
+    "changing_lines": {
+      "1": "When there is hoarfrost underfoot, solid ice is not far off.",
+      "2": "Straight, square, great. Without purpose, yet nothing remains unfurthered.",
+      "3": "Hidden lines. One is able to remain persevering. If by chance you are in the service of a king, seek not works, but bring to completion.",
+      "4": "A tied-up sack. No blame, no praise.",
+      "5": "A yellow lower garment brings supreme good fortune.",
+      "6": "Dragons fight in the meadow. Their blood is black and yellow."
+    }
+  },
+  {
+    "number": 3,
+    "name": "Difficulty at the Beginning",
+    "chinese": "屯",
+    "lines": ["yang", "yin", "yin", "yin", "yang", "yin"],
+    "judgment": "Difficulty at the Beginning works sublime success, furthering through perseverance.",
+    "image": "Clouds and thunder: The image of Difficulty at the Beginning. Thus the superior man brings order out of confusion.",
+    "description": "Initial chaos before creation. Like a plant breaking through earth, growth requires patience and persistence.",
+    "changing_lines": {
+      "1": "Hesitation and hindrance. It furthers one to remain persevering. It furthers one to appoint helpers.",
+      "2": "Difficulties pile up. Horse and wagon part company. He is not a robber; he wants to woo when the time comes.",
+      "3": "Whoever hunts deer without the forester only loses his way in the forest. The superior man understands the signs of the time and prefers to desist.",
+      "4": "Horse and wagon part company. Strive for union. To go brings good fortune. Everything acts to further.",
+      "5": "Difficulties in blessing. A little perseverance brings good fortune. Great perseverance brings misfortune.",
+      "6": "Horse and wagon part company. Bloody tears flow."
+    }
+  },
+  {
+    "number": 4,
+    "name": "Youthful Folly",
+    "chinese": "蒙",
+    "lines": ["yin", "yang", "yin", "yin", "yin", "yang"],
+    "judgment": "Youthful Folly has success. It is not I who seek the young fool; the young fool seeks me.",
+    "image": "A spring wells up at the foot of the mountain: The image of Youth. Thus the superior man fosters his character by thoroughness in all that he does.",
+    "description": "The innocence of youth seeking wisdom. Learning requires humility and the right teacher-student relationship.",
+    "changing_lines": {
+      "1": "To make a fool develop it furthers one to apply discipline. The fetters should be removed. To go on in this way brings humiliation.",
+      "2": "To bear with fools in kindliness brings good fortune. To know how to take women brings good fortune. The son is capable of taking charge of the household.",
+      "3": "Take not a maiden who, when she sees a man of bronze, loses possession of herself. Nothing furthers.",
+      "4": "Entangled folly brings humiliation.",
+      "5": "Childlike folly brings good fortune.",
+      "6": "In punishing folly it does not further one to commit transgressions. The only thing that furthers is to prevent transgressions."
+    }
+  },
+  {
+    "number": 5,
+    "name": "Waiting",
+    "chinese": "需",
+    "lines": ["yang", "yang", "yang", "yin", "yang", "yin"],
+    "judgment": "Waiting. If you are sincere, you have light and success. Perseverance brings good fortune.",
+    "image": "Clouds rise up to heaven: The image of Waiting. Thus the superior man eats and drinks, is joyous and of good cheer.",
+    "description": "Patient anticipation before action. Like clouds gathering before rain, timing is everything.",
+    "changing_lines": {
+      "1": "Waiting in the meadow. It furthers one to abide in what endures. No blame.",
+      "2": "Waiting on the sand. There is some gossip. The end brings good fortune.",
+      "3": "Waiting in the mud brings about the arrival of the enemy.",
+      "4": "Waiting in blood. Get out of the pit.",
+      "5": "Waiting at meat and drink. Perseverance brings good fortune.",
+      "6": "One falls into the pit. Three uninvited guests arrive. Honor them, and in the end there will be good fortune."
+    }
+  },
+  {
+    "number": 6,
+    "name": "Conflict",
+    "chinese": "訟",
+    "lines": ["yin", "yang", "yin", "yang", "yang", "yang"],
+    "judgment": "Conflict. You are sincere and are being obstructed. A cautious halt halfway brings good fortune.",
+    "image": "Heaven and water go their opposite ways: The image of Conflict. Thus in all his transactions the superior man carefully considers the beginning.",
+    "description": "Opposition and tension requiring careful navigation. Not all conflicts can or should be won.",
+    "changing_lines": {
+      "1": "If one does not perpetuate the affair, there is a little gossip. In the end, good fortune comes.",
+      "2": "One cannot engage in conflict; one returns home, gives way. The people of his town, three hundred households, remain free of guilt.",
+      "3": "To nourish oneself on ancient virtue induces perseverance. Danger. In the end, good fortune comes.",
+      "4": "One cannot engage in conflict. One turns back and submits to fate, changes one's attitude, and finds peace in perseverance.",
+      "5": "To contend before him brings supreme good fortune.",
+      "6": "Even if by chance a leather belt is bestowed on one, by the end of a morning it will have been snatched away three times."
+    }
+  }
+]
