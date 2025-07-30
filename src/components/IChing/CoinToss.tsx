@@ -63,7 +63,7 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
 
 
   const renderLine = (lineType: LineType) => {
-    const baseClasses = "w-24 h-4 mx-auto transition-all duration-500";
+    const baseClasses = "w-32 h-6 mx-auto transition-all duration-500";
     
     switch (lineType) {
       case 'yang':
@@ -71,8 +71,8 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
       case 'yin':
         return (
           <div className={`${baseClasses} flex justify-between`}>
-            <div className="w-10 h-4 bg-primary shadow-oracle"></div>
-            <div className="w-10 h-4 bg-primary shadow-oracle"></div>
+            <div className="w-14 h-6 bg-primary shadow-oracle"></div>
+            <div className="w-14 h-6 bg-primary shadow-oracle"></div>
           </div>
         );
       case 'changing-yang':
@@ -80,8 +80,8 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
       case 'changing-yin':
         return (
           <div className={`${baseClasses} flex justify-between animate-sacred-pulse`}>
-            <div className="w-10 h-4 bg-accent shadow-oracle"></div>
-            <div className="w-10 h-4 bg-accent shadow-oracle"></div>
+            <div className="w-14 h-6 bg-accent shadow-oracle"></div>
+            <div className="w-14 h-6 bg-accent shadow-oracle"></div>
           </div>
         );
     }
@@ -133,10 +133,10 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
             {Array.from({ length: 6 }).map((_, index) => {
               const lineIndex = 5 - index; // Reverse index to show bottom-up
               return (
-                <div key={index} className="flex items-center justify-center space-x-4">
-                  <div className="w-16"> {/* Space for line name */}
+                <div key={index} className="flex items-center justify-center space-x-6">
+                  <div className="w-32"> {/* Wider space for line name */}
                     {lines[lineIndex] && (
-                      <p className="text-xs italic text-muted-foreground text-right">
+                      <p className="text-sm italic text-muted-foreground text-right whitespace-nowrap">
                         {getLineName(lines[lineIndex])}
                       </p>
                     )}
@@ -147,10 +147,10 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
                         {renderLine(lines[lineIndex])}
                       </div>
                     ) : (
-                      <div className="w-24 h-4 border border-muted-foreground/30 rounded opacity-30"></div>
+                      <div className="w-32 h-6 border border-muted-foreground/30 rounded opacity-30"></div>
                     )}
                   </div>
-                  <div className="w-16"> {/* Space for balance */}
+                  <div className="w-32"> {/* Space for balance */}
                   </div>
                 </div>
               );
