@@ -83,12 +83,34 @@ ${reflectionPrompts.map(prompt => `• ${prompt}`).join('\n')}
     <div className="min-h-screen bg-gradient-cosmic p-6">
       <div className="max-w-2xl mx-auto space-y-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-2">
-            Your Oracle Reading
-          </h2>
-          <p className="text-muted-foreground">
-            Wisdom from the {hexagram.name}
-          </p>
+          <div className="flex items-center justify-center space-x-6 mb-4">
+            {/* Hexagram lines display */}
+            <div className="space-y-1">
+              {hexagram.lines.map((line: string, index: number) => {
+                const baseClasses = "w-16 h-2 transition-all duration-300";
+                return (
+                  <div key={index}>
+                    {line === 'yang' ? (
+                      <div className={`${baseClasses} bg-primary shadow-oracle`}></div>
+                    ) : (
+                      <div className={`${baseClasses} flex justify-between`}>
+                        <div className="w-7 h-2 bg-primary shadow-oracle"></div>
+                        <div className="w-7 h-2 bg-primary shadow-oracle"></div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-foreground mb-2">
+                Your Oracle Reading
+              </h2>
+              <p className="text-muted-foreground">
+                Wisdom from the {hexagram.name}
+              </p>
+            </div>
+          </div>
         </div>
 
         <Card className="p-8 bg-gradient-ethereal border-primary/20 shadow-cosmic">

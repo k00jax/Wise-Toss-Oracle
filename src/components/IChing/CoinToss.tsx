@@ -63,27 +63,40 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
 
 
   const renderLine = (lineType: LineType) => {
-    const baseClasses = "w-16 h-2 mx-auto transition-all duration-500";
+    const baseClasses = "w-24 h-4 mx-auto transition-all duration-500";
     
     switch (lineType) {
       case 'yang':
-        return <div className={`${baseClasses} bg-primary`}></div>;
+        return <div className={`${baseClasses} bg-primary shadow-oracle`}></div>;
       case 'yin':
         return (
           <div className={`${baseClasses} flex justify-between`}>
-            <div className="w-7 h-2 bg-primary"></div>
-            <div className="w-7 h-2 bg-primary"></div>
+            <div className="w-10 h-4 bg-primary shadow-oracle"></div>
+            <div className="w-10 h-4 bg-primary shadow-oracle"></div>
           </div>
         );
       case 'changing-yang':
-        return <div className={`${baseClasses} bg-accent animate-sacred-pulse`}></div>;
+        return <div className={`${baseClasses} bg-accent animate-sacred-pulse shadow-oracle`}></div>;
       case 'changing-yin':
         return (
           <div className={`${baseClasses} flex justify-between animate-sacred-pulse`}>
-            <div className="w-7 h-2 bg-accent"></div>
-            <div className="w-7 h-2 bg-accent"></div>
+            <div className="w-10 h-4 bg-accent shadow-oracle"></div>
+            <div className="w-10 h-4 bg-accent shadow-oracle"></div>
           </div>
         );
+    }
+  };
+
+  const getLineName = (lineType: LineType) => {
+    switch (lineType) {
+      case 'yang':
+        return 'unchanging yang';
+      case 'yin':
+        return 'unchanging yin';
+      case 'changing-yang':
+        return 'changing yang';
+      case 'changing-yin':
+        return 'changing yin';
     }
   };
 
@@ -108,7 +121,7 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
                 isFlipping ? 'animate-coin-flip' : ''
               } ${coins[index] === 'heads' ? 'bg-primary text-primary-foreground' : 'bg-card text-foreground'}`}
             >
-              {!isFlipping && coins.length > 0 ? (coins[index] === 'heads' ? '龍' : '○') : '?'}
+              {!isFlipping && coins.length > 0 ? (coins[index] === 'heads' ? '阳' : '陰') : '?'}
             </div>
           ))}
         </div>
@@ -120,14 +133,25 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
             {Array.from({ length: 6 }).map((_, index) => {
               const lineIndex = 5 - index; // Reverse index to show bottom-up
               return (
-                <div key={index} className="flex justify-center">
-                  {lines[lineIndex] ? (
-                    <div className="animate-hexagram-reveal">
-                      {renderLine(lines[lineIndex])}
-                    </div>
-                  ) : (
-                    <div className="w-16 h-2 border border-muted-foreground/30 rounded opacity-30"></div>
-                  )}
+                <div key={index} className="flex items-center justify-center space-x-4">
+                  <div className="w-16"> {/* Space for line name */}
+                    {lines[lineIndex] && (
+                      <p className="text-xs italic text-muted-foreground text-right">
+                        {getLineName(lines[lineIndex])}
+                      </p>
+                    )}
+                  </div>
+                  <div className="flex justify-center">
+                    {lines[lineIndex] ? (
+                      <div className="animate-hexagram-reveal">
+                        {renderLine(lines[lineIndex])}
+                      </div>
+                    ) : (
+                      <div className="w-24 h-4 border border-muted-foreground/30 rounded opacity-30"></div>
+                    )}
+                  </div>
+                  <div className="w-16"> {/* Space for balance */}
+                  </div>
                 </div>
               );
             })}
