@@ -26,21 +26,21 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
       }
       setCoins(newCoins);
       
-      // Calculate line type based on coin results
+      // Calculate line type based on I Ching coin method
       const headsCount = newCoins.filter(coin => coin === 'heads').length;
       let lineType: LineType;
       
       switch (headsCount) {
-        case 0: // All tails
+        case 0: // Three tails (6)
           lineType = 'changing-yin';
           break;
-        case 1: // Two tails, one head
+        case 1: // One head, two tails (7)
           lineType = 'yang';
           break;
-        case 2: // Two heads, one tail
+        case 2: // Two heads, one tail (8)
           lineType = 'yin';
           break;
-        case 3: // All heads
+        case 3: // Three heads (9)
           lineType = 'changing-yang';
           break;
         default:
@@ -50,21 +50,17 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
       setLines(prev => [...prev, lineType]);
       setIsFlipping(false);
       setShowResult(true);
+      
+      // Auto-advance after 2 seconds if not the last toss
+      if (currentToss < 5) {
+        setTimeout(() => {
+          setCurrentToss(prev => prev + 1);
+          setShowResult(false);
+        }, 2000);
+      }
     }, 1000);
   };
 
-  const nextToss = () => {
-    if (currentToss < 5) {
-      setCurrentToss(prev => prev + 1);
-      setShowResult(false);
-    } else {
-      // Convert lines to simple yin/yang for hexagram
-      const simplifiedLines = lines.map(line => 
-        line.includes('yang') ? 'yang' : 'yin'
-      );
-      onComplete(simplifiedLines);
-    }
-  };
 
   const renderLine = (lineType: LineType) => {
     const baseClasses = "w-16 h-2 mx-auto transition-all duration-500";
@@ -121,23 +117,26 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
         <div className="space-y-2">
           <h3 className="text-sm text-muted-foreground">Your hexagram so far:</h3>
           <div className="space-y-1 bg-card/20 rounded-lg p-4">
-            {Array.from({ length: 6 }).map((_, index) => (
-              <div key={index} className="flex justify-center">
-                {lines[index] ? (
-                  <div className="animate-hexagram-reveal">
-                    {renderLine(lines[index])}
-                  </div>
-                ) : (
-                  <div className="w-16 h-2 border border-muted-foreground/30 rounded opacity-30"></div>
-                )}
-              </div>
-            ))}
+            {Array.from({ length: 6 }).map((_, index) => {
+              const lineIndex = 5 - index; // Reverse index to show bottom-up
+              return (
+                <div key={index} className="flex justify-center">
+                  {lines[lineIndex] ? (
+                    <div className="animate-hexagram-reveal">
+                      {renderLine(lines[lineIndex])}
+                    </div>
+                  ) : (
+                    <div className="w-16 h-2 border border-muted-foreground/30 rounded opacity-30"></div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
 
         {/* Actions */}
         <div className="space-y-4">
-          {!showResult ? (
+          {!showResult || currentToss < 5 ? (
             <Button 
               onClick={tossCoins}
               disabled={isFlipping}
@@ -145,19 +144,24 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
             >
               {isFlipping ? 'Casting...' : 'Toss Coins'}
             </Button>
-          ) : (
+          ) : showResult && currentToss === 5 ? (
             <div className="space-y-3">
               <div className="text-sm text-accent">
                 {coins.filter(c => c === 'heads').length} heads, {coins.filter(c => c === 'tails').length} tails
               </div>
               <Button 
-                onClick={nextToss}
+                onClick={() => {
+                  const simplifiedLines = lines.map(line => 
+                    line.includes('yang') ? 'yang' : 'yin'
+                  );
+                  onComplete(simplifiedLines);
+                }}
                 className="px-8 py-4 text-lg bg-gradient-sacred hover:shadow-oracle transition-all duration-500"
               >
-                {currentToss < 5 ? 'Next Line' : 'Reveal Hexagram'}
+                Reveal Hexagram
               </Button>
             </div>
-          )}
+          ) : null}
         </div>
       </div>
     </div>

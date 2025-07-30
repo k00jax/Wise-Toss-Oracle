@@ -66,7 +66,7 @@ export const HexagramDisplay = ({ lines, onContinue }: HexagramDisplayProps) => 
           <div className="text-center space-y-6">
             {/* Hexagram Visual */}
             <div className="space-y-2 py-6">
-              {lines.map((line, index) => renderLine(line, index))}
+              {[...lines].reverse().map((line, index) => renderLine(line, lines.length - 1 - index))}
             </div>
 
             {/* Hexagram Info */}
