@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { OracleIntro } from './OracleIntro';
 import { CoinToss } from './CoinToss';
 import { HexagramDisplay } from './HexagramDisplay';
@@ -36,10 +36,10 @@ export const OracleApp = () => {
       return <OracleIntro onBegin={handleBegin} />;
     
     case 'tossing':
-      return <CoinToss onComplete={handleTossComplete} />;
+      return <CoinToss onComplete={handleTossComplete} onRestart={handleRestart} />;
     
     case 'hexagram':
-      return <HexagramDisplay lines={lines} onContinue={handleContinueToInterpretation} />;
+      return <HexagramDisplay lines={lines} onContinue={handleContinueToInterpretation} onRestart={handleRestart} />;
     
     case 'interpretation':
       return <OracleInterpretation hexagram={hexagram} onRestart={handleRestart} />;

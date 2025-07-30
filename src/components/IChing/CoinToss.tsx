@@ -3,11 +3,12 @@ import { Button } from '@/components/ui/button';
 
 interface CoinTossProps {
   onComplete: (lines: string[]) => void;
+  onRestart?: () => void;
 }
 
 type LineType = 'yin' | 'yang' | 'changing-yin' | 'changing-yang';
 
-export const CoinToss = ({ onComplete }: CoinTossProps) => {
+export const CoinToss = ({ onComplete, onRestart }: CoinTossProps) => {
   const [currentToss, setCurrentToss] = useState(0);
   const [isFlipping, setIsFlipping] = useState(false);
   const [lines, setLines] = useState<LineType[]>([]);
@@ -117,11 +118,20 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
           {[0, 1, 2].map((index) => (
             <div
               key={index}
-              className={`w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center text-sm font-bold transition-all duration-1000 ${
-                isFlipping ? 'animate-coin-flip' : ''
-              } ${coins[index] === 'heads' ? 'bg-primary text-primary-foreground' : 'bg-card text-foreground'}`}
+              className="flex flex-col items-center"
             >
-              {!isFlipping && coins.length > 0 ? (coins[index] === 'heads' ? '阳' : '陰') : '?'}
+              <div
+                className={`w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center text-sm font-bold transition-all duration-1000 ${
+                  isFlipping ? 'animate-coin-flip' : ''
+                } ${coins[index] === 'heads' ? 'bg-primary text-primary-foreground' : 'bg-card text-foreground'}`}
+              >
+                {!isFlipping && coins.length > 0 ? (coins[index] === 'heads' ? '阳' : '陰') : '?'}
+              </div>
+              {!isFlipping && coins.length > 0 && (
+                <span className="mt-1 text-xs font-semibold">
+                  {coins[index] === 'heads' ? 'H' : 'T'}
+                </span>
+              )}
             </div>
           ))}
         </div>
@@ -186,6 +196,31 @@ export const CoinToss = ({ onComplete }: CoinTossProps) => {
               </Button>
             </div>
           ) : null}
+          
+          {/* Home Button */}
+          <div className="mt-8 pt-4 border-t border-muted">
+            <Button 
+              onClick={() => onRestart ? onRestart() : window.location.reload()}
+              variant="outline" 
+              size="icon" 
+              className="rounded-full h-10 w-10"
+              title="Return to Home"
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="w-5 h-5"
+              >
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </Button>
+          </div>
         </div>
       </div>
     </div>

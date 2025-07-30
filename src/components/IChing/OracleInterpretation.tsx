@@ -192,6 +192,31 @@ ${reflectionPrompts.map(prompt => `• ${prompt}`).join('\n')}
             New Consultation
           </Button>
         </div>
+        
+        {/* Home Button */}
+        <div className="flex justify-center mt-4">
+          <Button 
+            onClick={onRestart}
+            variant="outline" 
+            size="icon" 
+            className="rounded-full h-10 w-10"
+            title="Return to Home"
+          >
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              className="w-5 h-5"
+            >
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </Button>
+        </div>
 
         {/* Closing Blessing */}
         <div className="text-center pt-8">

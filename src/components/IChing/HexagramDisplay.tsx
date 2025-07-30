@@ -6,9 +6,10 @@ import hexagramsData from '@/data/hexagrams.json';
 interface HexagramDisplayProps {
   lines: string[];
   onContinue: (hexagram: any) => void;
+  onRestart?: () => void;
 }
 
-export const HexagramDisplay = ({ lines, onContinue }: HexagramDisplayProps) => {
+export const HexagramDisplay = ({ lines, onContinue, onRestart }: HexagramDisplayProps) => {
   const [hexagram, setHexagram] = useState<any>(null);
   const [isRevealing, setIsRevealing] = useState(false);
 
@@ -102,13 +103,38 @@ export const HexagramDisplay = ({ lines, onContinue }: HexagramDisplayProps) => 
           </div>
         </Card>
 
-        <div className="text-center">
+        <div className="text-center space-y-4">
           <Button 
             onClick={() => onContinue(hexagram)}
             className="px-8 py-4 text-lg bg-gradient-sacred hover:shadow-oracle transition-all duration-500 hover:scale-105"
           >
             Receive Interpretation
           </Button>
+          
+          {/* Home Button */}
+          <div className="mt-4 pt-2">
+            <Button 
+              onClick={() => onRestart ? onRestart() : null}
+              variant="outline" 
+              size="icon" 
+              className="rounded-full h-10 w-10"
+              title="Return to Home"
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="w-5 h-5"
+              >
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
