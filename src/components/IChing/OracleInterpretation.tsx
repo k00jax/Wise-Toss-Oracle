@@ -1,36 +1,80 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Share2, Download } from 'lucide-react';
+1import { Share2, Download, BookOpen, Save } from 'lucide-react';
+import { useSubscription, ReadingHistory } from '@/contexts/SubscriptionContext';
+import { PremiumBadge } from './PremiumBadge';
 
 interface OracleInterpretationProps {
-  hexagram: any;
+  hexagram: any; // Can be single hexagram or {primary, resulting}
   onRestart: () => void;
+  onViewHistory?: () => void;
+  onInterpretationGenerated?: (interpretation: string) => void;
+  reading?: ReadingHistory;
 }
 
-export const OracleInterpretation = ({ hexagram, onRestart }: OracleInterpretationProps) => {
+export const OracleInterpretation = ({ 
+  hexagram, 
+  onRestart, 
+  onViewHistory,
+  onInterpretationGenerated,
+  reading
+}: OracleInterpretationProps) => {
   const [interpretation, setInterpretation] = useState('');
   const [isGenerating, setIsGenerating] = useState(true);
+  const [isSaved, setIsSaved] = useState(false);
+  
+  const { isSubscribed, addToHistory, incrementDailyReadings } = useSubscription();
 
   useEffect(() => {
+    // Increment reading count when interpretation screen is shown
+    incrementDailyReadings();
+    
     generateInterpretation();
-  }, [hexagram]);
+  }, [hexagram, incrementDailyReadings]);
 
   const generateInterpretation = async () => {
     setIsGenerating(true);
     
+    // Check if we have both primary and resulting hexagrams
+    const hasChangingLines = hexagram.primary && hexagram.resulting;
+    
+    // Get the primary hexagram (either directly or from the object)
+    const primaryHexagram = hasChangingLines ? hexagram.primary : hexagram;
+    
     // Simulate AI interpretation generation
     setTimeout(() => {
-      const interpretations = [
-        `The ${hexagram.name} suggests a time of ${hexagram.description.toLowerCase()}. The cosmic forces align to bring clarity to your situation. This hexagram speaks to the balance between action and receptivity, urging you to trust in the natural flow of events while remaining alert to opportunities for growth.`,
-        
-        `In consulting the ${hexagram.name}, the oracle reveals that you stand at a crossroads of potential. The ancient wisdom embedded in this hexagram illuminates the path forward, suggesting that patience and understanding are your greatest allies at this time. Consider how the image of ${hexagram.image.toLowerCase()} applies to your current circumstances.`,
-        
-        `The appearance of ${hexagram.name} in your reading indicates a profound moment of transformation. This hexagram has guided seekers for thousands of years, and its wisdom now flows to you. The judgment "${hexagram.judgment}" offers insight into the energies surrounding your question. Reflect deeply on how these ancient truths resonate with your present situation.`
-      ];
+      let interpretationText;
       
-      setInterpretation(interpretations[Math.floor(Math.random() * interpretations.length)]);
+      if (hasChangingLines) {
+        // If we have changing lines, generate an interpretation that includes both hexagrams
+        const resultingHexagram = hexagram.resulting;
+        const interpretationsWithChange = [
+          `The ${primaryHexagram.name} is transforming into ${resultingHexagram.name}, suggesting a time of dynamic change. Your current situation reflects ${primaryHexagram.description.toLowerCase()}, but is evolving toward ${resultingHexagram.description.toLowerCase()}. This transformation indicates that while you are presently experiencing ${primaryHexagram.name}, you are moving toward the energy of ${resultingHexagram.name}. Pay attention to how you can navigate this transition smoothly.`,
+          
+          `Your reading shows ${primaryHexagram.name} transforming into ${resultingHexagram.name}. This signals a significant shift from "${primaryHexagram.judgment}" to "${resultingHexagram.judgment}". The changing lines represent key aspects of your situation that are in flux. The wisdom of the I Ching suggests that acknowledging both where you are and where you're heading will provide the clearest guidance.`,
+          
+          `The oracle reveals ${primaryHexagram.name} transforming to ${resultingHexagram.name}, indicating your situation is in a state of meaningful transition. The present circumstances (${primaryHexagram.name}) are giving way to new conditions (${resultingHexagram.name}). Consider how the image of ${primaryHexagram.image.toLowerCase()} is evolving into ${resultingHexagram.image.toLowerCase()} in your life.`
+        ];
+        interpretationText = interpretationsWithChange[Math.floor(Math.random() * interpretationsWithChange.length)];
+      } else {
+        // For a single hexagram, use the original interpretation options
+        const interpretations = [
+          `The ${primaryHexagram.name} suggests a time of ${primaryHexagram.description.toLowerCase()}. The cosmic forces align to bring clarity to your situation. This hexagram speaks to the balance between action and receptivity, urging you to trust in the natural flow of events while remaining alert to opportunities for growth.`,
+          
+          `In consulting the ${primaryHexagram.name}, the oracle reveals that you stand at a crossroads of potential. The ancient wisdom embedded in this hexagram illuminates the path forward, suggesting that patience and understanding are your greatest allies at this time. Consider how the image of ${primaryHexagram.image.toLowerCase()} applies to your current circumstances.`,
+          
+          `The appearance of ${primaryHexagram.name} in your reading indicates a profound moment of transformation. This hexagram has guided seekers for thousands of years, and its wisdom now flows to you. The judgment "${primaryHexagram.judgment}" offers insight into the energies surrounding your question. Reflect deeply on how these ancient truths resonate with your present situation.`
+        ];
+        interpretationText = interpretations[Math.floor(Math.random() * interpretations.length)];
+      }
+      
+      setInterpretation(interpretationText);
       setIsGenerating(false);
+      
+      if (onInterpretationGenerated) {
+        onInterpretationGenerated(interpretationText);
+      }
     }, 3000);
   };
 
@@ -165,6 +209,11 @@ ${reflectionPrompts.map(prompt => `• ${prompt}`).join('\n')}
           </div>
         </Card>
 
+        {/* Subscription Status */}
+        <div className="text-center mb-4">
+          <PremiumBadge />
+        </div>
+        
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
@@ -185,12 +234,48 @@ ${reflectionPrompts.map(prompt => `• ${prompt}`).join('\n')}
             <span>Download</span>
           </Button>
           
+          {isSubscribed && reading && !isSaved && (
+            <Button
+              onClick={() => {
+                if (reading) {
+                  addToHistory(reading);
+                  setIsSaved(true);
+                }
+              }}
+              variant="outline"
+              className="flex items-center space-x-2 border-accent/30 hover:bg-accent/10"
+            >
+              <Save className="w-4 h-4" />
+              <span>Save Reading</span>
+            </Button>
+          )}
+          
           <Button
             onClick={onRestart}
             className="bg-gradient-sacred hover:shadow-oracle transition-all duration-500"
           >
             New Consultation
           </Button>
+        </div>
+        
+        {/* Premium Features */}
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center justify-center">
+          {isSubscribed && onViewHistory && (
+            <Button 
+              onClick={onViewHistory}
+              variant="ghost" 
+              className="text-sm flex items-center"
+            >
+              <BookOpen className="w-4 h-4 mr-1" />
+              View Reading History
+            </Button>
+          )}
+          
+          {!isSubscribed && (
+            <div className="text-sm bg-muted/20 px-3 py-2 rounded-md flex items-center">
+              <span className="text-muted-foreground">Subscribe to save readings and keep a personal journal</span>
+            </div>
+          )}
         </div>
         
         {/* Home Button */}

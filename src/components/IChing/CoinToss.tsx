@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
 interface CoinTossProps {
-  onComplete: (lines: string[]) => void;
+  onComplete: (lines: ('yin' | 'yang' | 'changing-yin' | 'changing-yang')[]) => void;
   onRestart?: () => void;
 }
 
@@ -16,6 +16,11 @@ export const CoinToss = ({ onComplete, onRestart }: CoinTossProps) => {
   const [showResult, setShowResult] = useState(false);
 
   const tossCoins = () => {
+    // Prevent tossing if we already have 6 lines
+    if (lines.length >= 6) {
+      return;
+    }
+    
     setIsFlipping(true);
     setShowResult(false);
     
@@ -106,10 +111,16 @@ export const CoinToss = ({ onComplete, onRestart }: CoinTossProps) => {
       <div className="text-center space-y-8 max-w-md">
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-foreground">
-            Line {currentToss + 1} of 6
+            {lines.length < 6 ? 
+              `Line ${Math.min(currentToss + 1, 6)} of 6` : 
+              `Hexagram Complete`
+            }
           </h2>
           <p className="text-muted-foreground">
-            Toss the three coins to determine this line
+            {lines.length < 6 ?
+              `Toss the three coins to determine this line` :
+              `Your hexagram is ready to be revealed`
+            }
           </p>
         </div>
 
@@ -170,32 +181,30 @@ export const CoinToss = ({ onComplete, onRestart }: CoinTossProps) => {
 
         {/* Actions */}
         <div className="space-y-4">
-          {!showResult || currentToss < 5 ? (
+          {lines.length < 6 ? (
             <Button 
               onClick={tossCoins}
-              disabled={isFlipping}
+              disabled={isFlipping || lines.length >= 6}
               className="px-8 py-4 text-lg bg-gradient-sacred hover:shadow-oracle transition-all duration-500"
             >
               {isFlipping ? 'Casting...' : 'Toss Coins'}
             </Button>
-          ) : showResult && currentToss === 5 ? (
+          ) : (
             <div className="space-y-3">
               <div className="text-sm text-accent">
                 {coins.filter(c => c === 'heads').length} heads, {coins.filter(c => c === 'tails').length} tails
               </div>
               <Button 
                 onClick={() => {
-                  const simplifiedLines = lines.map(line => 
-                    line.includes('yang') ? 'yang' : 'yin'
-                  );
-                  onComplete(simplifiedLines);
+                  // Pass the full lines array with changing line information
+                  onComplete(lines);
                 }}
                 className="px-8 py-4 text-lg bg-gradient-sacred hover:shadow-oracle transition-all duration-500"
               >
                 Reveal Hexagram
               </Button>
             </div>
-          ) : null}
+          )}
           
           {/* Home Button */}
           <div className="mt-8 pt-4 border-t border-muted">

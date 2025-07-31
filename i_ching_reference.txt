@@ -1,0 +1,698 @@
+﻿Trigram: ☰ — Heaven (Qián)
+Binary: 111
+Meaning: The creative force. Heaven symbolizes strength, clarity, leadership, and pure yang energy. It represents initiative, expansion, and the active principle in all things.
+
+
+---
+
+
+Trigram: ☷ — Earth (Kūn)
+Binary: 000
+Meaning: The receptive force. Earth embodies softness, support, devotion, and pure yin energy. It represents nurturing, responsiveness, and the passive yet essential foundation of life.
+
+
+---
+
+
+Trigram: ☵ — Water (Kǎn)
+Binary: 010
+Meaning: The abyss. Water symbolizes danger, depth, flow, and mystery. It represents adaptability and the trials that refine character through movement and uncertainty.
+
+
+---
+
+
+Trigram: ☲ — Fire (Lí)
+Binary: 101
+Meaning: Clarity and dependence. Fire represents light, insight, and illumination. It must attach to something to burn, and reflects brilliance, vulnerability, and interdependence.
+
+
+---
+
+
+Trigram: ☶ — Mountain (Gèn)
+Binary: 100
+Meaning: Stillness and boundaries. Mountain represents immovability, rest, and meditation. It teaches containment, reflection, and knowing when to pause or hold firm.
+
+
+---
+
+
+Trigram: ☴ — Wind/Wood (Xùn)
+Binary: 110
+Meaning: Penetration and growth. Wind or wood reflects slow, steady expansion, influence, and flexibility. It symbolizes cultivation, ethics, and the ability to affect from within.
+
+
+---
+
+
+Trigram: ☳ — Thunder (Zhèn)
+Binary: 001
+Meaning: Arousal and sudden change. Thunder represents shock, movement, and the awakening of new potential. It catalyzes action and brings hidden things to the surface.
+
+
+---
+
+
+Trigram: ☱ — Lake (Duì)
+Binary: 011
+Meaning: Joy and openness. Lake symbolizes communication, pleasure, persuasion, and emotional resonance. It reflects the sweetness of life, but also the need for depth beneath charm.
+
+
+---
+
+Hexagram 1 — The Creative
+Binary: 111111
+Upper Trigram: Heaven (☰) — Creative force, strength, sky
+Lower Trigram: Heaven (☰) — Creative force, strength, sky
+Meaning: The Creative represents pure yang energy — strong, initiating, forceful. It is associated with leadership, momentum, and clarity of purpose. All things begin with movement, and this hexagram reflects the power of decisive action.
+
+
+---
+
+
+Hexagram 2 — The Receptive
+Binary: 000000
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing
+Meaning: The Receptive embodies pure yin energy — grounded, adaptable, supportive. It complements The Creative by receiving, sustaining, and nurturing what has been set in motion. True strength is found in surrender and service.
+
+
+---
+
+
+Hexagram 3 — Difficulty at the Beginning
+Binary: 001110
+Upper Trigram: Water (☵) — Danger, flow, the abyss
+Lower Trigram: Thunder (☳) — Action, movement, arousal
+Meaning: Beginnings are chaotic and unclear. This hexagram reflects the challenge of organizing raw potential. Action without understanding leads to struggle. Persist, adapt, and clarity will emerge.
+
+
+---
+
+
+Hexagram 4 — Youthful Folly
+Binary: 100001
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting
+Lower Trigram: Water (☵) — Danger, flow, the abyss
+Meaning: This hexagram warns of immature energy — curiosity without wisdom, eagerness without depth. It calls for discipline, humility, and patience in seeking knowledge. The wise do not indulge folly; they guide it gently.
+
+
+---
+
+
+Hexagram 5 — Waiting (Nourishment)
+Binary: 010111
+Upper Trigram: Heaven (☰) — Creative force, strength, sky
+Lower Trigram: Water (☵) — Danger, flow, the abyss
+Meaning: True action often begins with waiting. This hexagram speaks to strategic patience — preparing yourself while forces align. Stay centered in uncertainty. Trust that nourishment will come in time.
+
+
+---
+
+
+Hexagram 6 — Conflict
+Binary: 111010
+Upper Trigram: Water (☵) — Danger, flow, the abyss
+Lower Trigram: Heaven (☰) — Creative force, strength, sky
+Meaning: Disputes arise when forces clash without understanding. This hexagram cautions against escalation. Seek counsel, define your values, and know when to yield. Conflict reveals truth, but resolution requires grace.
+
+
+---
+
+
+Hexagram 7 — The Army
+Binary: 010000
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing
+Lower Trigram: Water (☵) — Danger, flow, the abyss
+Meaning: Discipline and structure are required to channel chaotic forces. The Army symbolizes coordinated effort. It is not about violence, but about alignment and strategy in the face of challenge. Lead with integrity.
+
+
+---
+
+
+Hexagram 8 — Holding Together (Union)
+Binary: 000010
+Upper Trigram: Water (☵) — Danger, flow, the abyss
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing
+Meaning: Union is strength. This hexagram reflects the power of shared purpose and emotional alignment. In times of uncertainty, connection provides stability. Belonging is both a gift and a responsibility.
+
+
+---
+
+
+Hexagram 9 — The Taming Power of the Small
+Binary: 110111
+Upper Trigram: Wind (☴) — Gentleness, penetration, growth  
+Lower Trigram: Heaven (☰) — Creative force, strength, sky  
+Meaning: Small forces can still influence great power. This hexagram speaks to restraint, preparation, and gradual progress. Influence with subtlety, not force. A light touch changes the wind more than a hammer.
+
+
+---
+
+
+Hexagram 10 — Treading (Conduct)
+Binary: 111101
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: To walk among the powerful requires awareness and self-control. This hexagram speaks to respectful conduct and careful movement. One misstep brings danger. Walk with clarity, and even tigers will not strike.
+
+
+---
+
+
+Hexagram 11 — Peace
+Binary: 000111
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Meaning: Heaven and Earth are in harmony. This hexagram represents union, stability, and prosperity. In times of peace, build. Establish harmony now to prepare for future imbalance.
+
+
+---
+
+
+Hexagram 12 — Standstill (Stagnation)
+Binary: 111000
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Lower Trigram: Heaven (☰) — Creative force, strength, sky  
+Meaning: When communication breaks down and values diverge, stillness overtakes action. This hexagram reflects social or spiritual blockage. Do not push forward. Maintain integrity and wait for change.
+
+
+---
+
+
+Hexagram 13 — Fellowship with Men
+Binary: 111011
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: Shared vision builds true fellowship. This hexagram represents unity of spirit, especially across differences. Genuine connection is based on truth, not uniformity. Burn together — not alone.
+
+
+---
+
+
+Hexagram 14 — Possession in Great Measure
+Binary: 110111
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Heaven (☰) — Creative force, strength, sky  
+Meaning: True power is not just what you have, but how you carry it. This hexagram speaks of abundance paired with virtue. Lead generously, shine responsibly. What you possess must uplift others.
+
+
+---
+
+
+Hexagram 15 — Modesty
+Binary: 000100
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Meaning: Modesty is not weakness — it is the strength to remain grounded. This hexagram teaches the value of restraint, humility, and balance. What is low becomes filled; what is full becomes emptied.
+
+
+---
+
+
+Hexagram 16 — Enthusiasm
+Binary: 001000
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: Joyful momentum awakens possibility. This hexagram reflects a surge of aligned energy — passion driven by purpose. Lead with vision and excitement, but guide your enthusiasm with wisdom.
+
+
+---
+
+
+Hexagram 17 — Following  
+Binary: 100111  
+Upper Trigram: Lake (☱) — Joy, openness, persuasion  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: True leadership is built on trust and resonance, not control. This hexagram emphasizes the importance of aligning with natural rhythms and following what inspires. Influence flows both ways — to lead well, follow truth.
+
+
+---
+
+
+Hexagram 18 — Work on What Has Been Spoiled  
+Binary: 111001  
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: This hexagram signals the need to correct past mistakes. Rot sets in when attention fades. Now is the time to restore integrity — not through force, but through reflection, clarity, and quiet, persistent effort.
+
+
+---
+
+
+Hexagram 19 — Approach  
+Binary: 000011  
+Upper Trigram: Lake (☱) — Joy, openness, persuasion  
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Meaning: Approach reflects favorable conditions. Support is available; timing is aligned. But success requires humility. Move forward with sincerity and generosity — not entitlement — and others will follow.
+
+
+---
+
+
+Hexagram 20 — Contemplation (View)  
+Binary: 110000  
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: Step back. Observe. This hexagram invites you to gain perspective before acting. Contemplation brings clarity — of both the external world and your own motives. From that stillness, direction becomes obvious.
+
+
+---
+
+
+Hexagram 21 — Biting Through  
+Binary: 100101  
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: Obstacles require directness. Biting Through is about decisive action — confronting injustice, cutting through confusion. But clarity must be paired with integrity. Don't punish — resolve.
+
+
+---
+
+
+Hexagram 22 — Grace  
+Binary: 101001  
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: Beauty enhances truth, but cannot replace it. This hexagram speaks to outer form — style, presentation, ritual. Let grace serve function. Embellish with intention, not illusion.
+
+
+---
+
+
+Hexagram 23 — Splitting Apart  
+Binary: 000001  
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Meaning: Foundations weaken. This hexagram warns of disintegration — when the core is compromised, collapse is inevitable. Retreat. Conserve energy. Preserve what matters while the unnecessary falls away.
+
+
+---
+
+
+Hexagram 24 — Return (The Turning Point)  
+Binary: 100000  
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: Every end seeds a beginning. This hexagram reflects cycles — decline followed by renewal. Return to truth, return to center. Do not rush. The path realigns in its own time.
+
+
+---
+
+
+Hexagram 25 — Innocence (The Unexpected)  
+Binary: 111100  
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: Innocence is not ignorance — it is pure intent. This hexagram honors spontaneous truth and authentic action without hidden motive. Align with natural principles, not calculated outcomes. Let things unfold.
+
+
+---
+
+
+Hexagram 26 — The Taming Power of the Great  
+Binary: 001111  
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Meaning: Great power restrained becomes even greater. This hexagram reflects strength held in check — stored, prepared, concentrated. It is a time for study, patience, and controlled movement. Force without timing fails.
+
+
+---
+
+
+Hexagram 27 — Nourishment  
+Binary: 100010  
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: We are shaped by what we consume — food, thoughts, relationships. This hexagram asks: what truly nourishes you? Guard your intake. Speak and eat with awareness. The mouth is both gate and mirror.
+
+
+---
+
+
+Hexagram 28 — Preponderance of the Great  
+Binary: 010011  
+Upper Trigram: Lake (☱) — Joy, openness, persuasion  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: When the weight becomes too great, things bend or break. This hexagram signals a critical threshold — a need to act decisively and bear temporary strain. Do not delay. Uprightness must be bold now.
+
+
+---
+
+
+Hexagram 29 — The Abysmal (Water)  
+Binary: 010010  
+Upper Trigram: Water (☵) — Danger, flow, the abyss  
+Lower Trigram: Water (☵) — Danger, flow, the abyss  
+Meaning: You are in the flow of something deep, dark, and moving. The Abysmal speaks to endurance through danger. Survival comes through discipline and flexibility. Walk with care, but do not stop walking.
+
+
+---
+
+
+Hexagram 30 — The Clinging (Fire)  
+Binary: 101101  
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: Fire clings to what fuels it. This hexagram reflects insight, visibility, and dependence on context. It teaches us to hold to truth — to remain centered even as we rely on what is not ours.
+
+
+---
+
+
+Hexagram 31 — Influence (Wooing)  
+Binary: 110001  
+Upper Trigram: Lake (☱) — Joy, openness, persuasion  
+Lower Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Meaning: True influence arises through receptivity, not force. This hexagram reflects attraction, affection, and emotional resonance. Move gently. What you affect is also affecting you.
+
+
+---
+
+
+Hexagram 32 — Duration  
+Binary: 100110  
+Upper Trigram: Wind (☴) — Gentleness, penetration, growth  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: What endures is what adapts. This hexagram is about consistency through change — a stable rhythm, not rigid form. Commit to a path with integrity, and walk it in all weather.
+
+
+---
+
+
+Hexagram 33 — Retreat  
+Binary: 001110  
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Meaning: Wisdom sometimes means withdrawal. This hexagram reflects strategic retreat — stepping back not in defeat, but in preservation. Strength preserved is strength multiplied. Step away to regain clarity.
+
+
+---
+
+
+Hexagram 34 — The Power of the Great  
+Binary: 011111  
+Upper Trigram: Thunder (☳) — Action, movement, arousal  
+Lower Trigram: Heaven (☰) — Creative force, strength, sky  
+Meaning: This is a time of immense energy — but great power must be guided by virtue. Rushing forward carelessly leads to ruin. With self-restraint and purpose, your strength becomes unstoppable.
+
+
+---
+
+
+Hexagram 35 — Progress  
+Binary: 111001  
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Meaning: Light rises above the earth — clarity moves through effort. This hexagram signifies advancement, recognition, and forward motion. Cultivate momentum, but remain grounded. Progress is a path, not a destination.
+
+
+---
+
+
+Hexagram 36 — Darkening of the Light  
+Binary: 100000  
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: In times of oppression, inner clarity must be hidden. This hexagram reflects the need for strategic concealment. Guard your light. Let it burn inwardly until the time to shine returns.
+
+
+---
+
+
+Hexagram 37 — The Family (The Clan)  
+Binary: 101000  
+Upper Trigram: Wind (☴) — Gentleness, penetration, growth  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: The home is the foundation of society. This hexagram speaks to roles, respect, and mutual support within a group. Harmonize responsibility and warmth. Strengthen the inner circle before looking outward.
+
+
+---
+
+
+Hexagram 38 — Opposition  
+Binary: 000101  
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: When forces diverge, tension arises. Opposition is not always conflict — it can be differentiation, independence, or contrast. Respect the differences, and connection becomes possible through paradox.
+
+
+---
+
+
+Hexagram 39 — Obstruction  
+Binary: 001010  
+Upper Trigram: Water (☵) — Danger, flow, the abyss  
+Lower Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Meaning: The way forward is blocked. This hexagram warns of challenge or internal resistance. Pause. Seek support. Turn inward before you try again. Sometimes the best path is the one that waits.
+
+
+---
+
+
+Hexagram 40 — Deliverance  
+Binary: 010100  
+Upper Trigram: Thunder (☳) — Action, movement, arousal  
+Lower Trigram: Water (☵) — Danger, flow, the abyss  
+Meaning: Release after tension. This hexagram reflects resolution — the storm has passed, and renewal begins. Forgive. Let go. Move forward with clarity and without bitterness. Deliverance is freedom from entanglement.
+
+
+---
+
+
+Hexagram 41 — Decrease  
+Binary: 110100  
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: In decreasing excess, clarity emerges. This hexagram reflects intentional sacrifice — letting go of what is unnecessary to strengthen what matters. Give willingly, and what remains will be pure and strong.
+
+
+---
+
+
+Hexagram 42 — Increase  
+Binary: 001011  
+Upper Trigram: Wind (☴) — Gentleness, penetration, growth  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: A time of expansion is at hand. This hexagram calls for generosity, investment, and forward motion. Share abundance, support others, and align your growth with something greater than yourself.
+
+
+---
+
+
+Hexagram 43 — Breakthrough (Resoluteness)  
+Binary: 111110  
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: Breakthrough requires courage. This hexagram urges decisive action in the face of persistent obstacles. Declare your truth. Act with clarity. The time to speak is now — silence would be compromise.
+
+
+---
+
+
+Hexagram 44 — Coming to Meet  
+Binary: 011111  
+Upper Trigram: Heaven (☰) — Creative force, strength, sky  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: A sudden encounter arises. This hexagram reflects unexpected influence — often subtle, seductive, or disruptive. Remain grounded. When something powerful meets you halfway, discern its intent before embracing it.
+
+
+---
+
+
+Hexagram 45 — Gathering Together (Massing)  
+Binary: 000110  
+Upper Trigram: Lake (☱) — Joy, openness, persuasion  
+Lower Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Meaning: This is a time for uniting others — not through force, but shared purpose. The strength of the group rests in the sincerity of its bonds. Speak with clarity. Lead by listening. Gather to serve.
+
+
+---
+
+
+Hexagram 46 — Pushing Upward  
+Binary: 011000  
+Upper Trigram: Earth (☷) — Receptive, yielding, nurturing  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: Growth from below is steady, natural, and inevitable. This hexagram reflects gradual progress, quiet ambition, and earned success. Push upward without rush. Each step builds the strength of the whole.
+
+
+---
+
+
+Hexagram 47 — Oppression (Exhaustion)  
+Binary: 000111  
+Upper Trigram: Water (☵) — Danger, flow, the abyss  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: Burden weighs heavily. This hexagram speaks to mental and emotional fatigue. Accept limitations. Stillness is not failure. Conserve your energy, endure with dignity, and know that relief will follow pressure.
+
+
+---
+
+
+Hexagram 48 — The Well  
+Binary: 101010  
+Upper Trigram: Water (☵) — Danger, flow, the abyss  
+Lower Trigram: Water (☵) — Danger, flow, the abyss  
+Meaning: The well is ancient and ever-present — a source beneath the surface. This hexagram reminds you that true sustenance is drawn through effort. Tools may change, but the water remains. Draw deeply and wisely.
+
+
+---
+
+
+Hexagram 49 — Revolution (Molting)  
+Binary: 110110  
+Upper Trigram: Lake (☱) — Joy, openness, persuasion  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: Real change comes from within and without. This hexagram reflects a necessary transformation — one that sheds the old to reveal the true. Revolution must be principled, not reactive. Act only when timing and truth align.
+
+
+---
+
+
+Hexagram 50 — The Cauldron  
+Binary: 011001  
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: The cauldron is a sacred vessel — it transforms raw material into nourishment. This hexagram speaks to spiritual refinement, the cultivation of wisdom, and the preparation of what is essential. What are you preparing to carry forward?
+
+
+---
+
+
+Hexagram 51 — The Arousing (Shock, Thunder)  
+Binary: 100100  
+Upper Trigram: Thunder (☳) — Action, movement, arousal  
+Lower Trigram: Thunder (☳) — Action, movement, arousal  
+Meaning: Sudden shock wakes the soul. This hexagram represents disruption — an unexpected event that shakes you free from stagnation. Do not panic. Let the thunder move through you. The stillness afterward holds new power.
+
+
+---
+
+
+Hexagram 52 — Keeping Still (Mountain)  
+Binary: 001001  
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Meaning: Stillness is not inactivity. This hexagram reflects deliberate calm — the kind found in meditation, solitude, and clarity of position. Do not chase motion. Find peace by remaining rooted, even as the world moves around you.
+
+
+---
+
+
+Hexagram 53 — Development (Gradual Progress)  
+Binary: 110101  
+Upper Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: Like a tree growing on a mountain, this hexagram reflects steady, intentional progress. There is no rush. Every step forward must be earned and rooted. Enduring success comes slowly — and remains long.
+
+
+---
+
+
+Hexagram 54 — The Marrying Maiden  
+Binary: 101011  
+Upper Trigram: Thunder (☳) — Action, movement, arousal  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: This hexagram reflects entering into a situation without full power or clarity. It warns of acting out of place or imbalance. Navigate with awareness, grace, and restraint. Know when to yield and when to pause.
+
+
+---
+
+
+Hexagram 55 — Abundance  
+Binary: 111011  
+Upper Trigram: Thunder (☳) — Action, movement, arousal  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: Light and sound converge. This hexagram reflects great energy, recognition, and prosperity. But abundance is fleeting. Appreciate the peak moment without clinging. Use the spotlight to illuminate, not dominate.
+
+
+---
+
+
+Hexagram 56 — The Wanderer  
+Binary: 110111  
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Meaning: You are passing through — not rooted. This hexagram speaks to transience, adaptability, and self-reliance. As a guest in foreign lands, carry dignity without arrogance. Travel light, but stay centered in who you are.
+
+
+---
+
+
+Hexagram 57 — The Gentle (Penetrating, Wind)  
+Binary: 110110  
+Upper Trigram: Wind (☴) — Gentleness, penetration, growth  
+Lower Trigram: Wind (☴) — Gentleness, penetration, growth  
+Meaning: Influence that lasts is subtle, consistent, and quiet. This hexagram reflects the power of steady intention. Like wind carving stone, change comes through persistence, not force. Act with integrity over time.
+
+
+---
+
+
+Hexagram 58 — The Joyous (Lake)  
+Binary: 011011  
+Upper Trigram: Lake (☱) — Joy, openness, persuasion  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: Joy creates connection. This hexagram speaks to open expression, shared happiness, and emotional harmony. True joy comes from sincerity and balance — not indulgence. Nourish what uplifts without attachment.
+
+
+---
+
+
+Hexagram 59 — Dispersion (Dissolution)  
+Binary: 000101  
+Upper Trigram: Wind (☴) — Gentleness, penetration, growth  
+Lower Trigram: Water (☵) — Danger, flow, the abyss  
+Meaning: Barriers dissolve when energy flows freely. This hexagram represents the breaking apart of rigidity — the dispersal of ego, isolation, or confusion. Let go of form. Allow unity to emerge from the open field.
+
+
+---
+
+
+Hexagram 60 — Limitation  
+Binary: 101110  
+Upper Trigram: Water (☵) — Danger, flow, the abyss  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: Freedom requires boundaries. This hexagram reflects necessary limits — not to restrict life, but to give it form. Define what you can and cannot do now. True clarity comes from restraint, not excess.
+
+
+---
+
+
+Hexagram 61 — Inner Truth  
+Binary: 110101  
+Upper Trigram: Wind (☴) — Gentleness, penetration, growth  
+Lower Trigram: Lake (☱) — Joy, openness, persuasion  
+Meaning: This hexagram reflects spiritual resonance — a truth felt deeply rather than proven externally. Connection, trust, and intuition are central now. Let your sincerity be your guide. Listen to what is unsaid.
+
+
+---
+
+
+Hexagram 62 — Preponderance of the Small  
+Binary: 101100  
+Upper Trigram: Thunder (☳) — Action, movement, arousal  
+Lower Trigram: Mountain (☶) — Stillness, boundaries, resting  
+Meaning: This is not a time for grand gestures. The Small carries the moment — small actions, quiet influence, careful attention. Honor the details. Avoid excess. Humility now protects future strength.
+
+
+---
+
+
+Hexagram 63 — After Completion  
+Binary: 101010  
+Upper Trigram: Water (☵) — Danger, flow, the abyss  
+Lower Trigram: Fire (☲) — Clarity, illumination, dependence  
+Meaning: The structure is complete, but danger remains. This hexagram warns against complacency. After success, stay alert. The wheel continues to turn — what was resolved can unravel if forgotten.
+
+
+---
+
+
+Hexagram 64 — Before Completion  
+Binary: 010101  
+Upper Trigram: Fire (☲) — Clarity, illumination, dependence  
+Lower Trigram: Water (☵) — Danger, flow, the abyss  
+Meaning: The end is near, but not yet secured. This hexagram signals transition — a final challenge or temptation before resolution. Stay focused. Precision matters. Completion comes only through disciplined follow-through.
